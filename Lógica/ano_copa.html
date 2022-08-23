@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoLimite = parseInt(prompt("Insira o ano que você está"));
+    var primeiraCopa = 1930;
+    var naoTeveCopa = 1942;
+    var naoTeveCopa2 = 1946;
+
+    while (primeiraCopa <= anoLimite) { 
+
+        mostra("No ano de " + primeiraCopa + " teve copa do Mundo FIFA");
+        primeiraCopa = primeiraCopa + 4;
+        pulaLinha();
+
+    }
+
+    mostra("FIM!");
+
+</script>

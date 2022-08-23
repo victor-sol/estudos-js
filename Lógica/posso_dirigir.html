@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+    function éMaiorDeIdade(idade) {
+
+        return idade >= 18;
+    
+    }
+
+    function verificaSeTemCarteira(temCarteira) {
+
+        return temCarteira == "S";
+    }
+
+    function mostraSeEstaAptoADirigir(idade, habilitação) {
+        //idade e habilitação = true
+        //sem idade e habilitação = false
+        //idade e sem habilitação = false
+        //sem idade e sem habilitação = false
+
+        if(idade && habilitação) {
+
+            mostra("Você está habilitado a dirigir.");
+            
+        } else {
+
+            mostra("Você ainda não está apto a dirigir.");
+        } 
+
+    }
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+    var temCarteira = prompt("Tem carteira? Responda S ou N");
+    var maiordeIdade = éMaiorDeIdade(idade);
+    var aptoPorHabilitação = verificaSeTemCarteira(temCarteira);
+
+    mostraSeEstaAptoADirigir(maiordeIdade, aptoPorHabilitação);
+    
+
+</script>

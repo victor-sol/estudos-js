@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+	function pulaLinha() {
+
+		document.write("<br>")
+	}
+
+	function mostra(frase) {
+
+		document.write(frase)
+		pulaLinha()
+	}
+
+	var anoAtual = 2022;
+	var anoPortugueses = 1500;
+	var tempoGerações = 28;
+	var quantosAnosPassaram = anoAtual - anoPortugueses;
+
+	mostra("Os portugueses chegaram ao Brasil em " + (anoPortugueses) + ", em 1528 tivemos a primeira geração de brasileiros")
+	mostra("até os dias atuais nós tivemos aproximadamente..")
+	pulaLinha();
+	mostra(Math.round(quantosAnosPassaram/tempoGerações) + " gerações")
+
+
+</script>
